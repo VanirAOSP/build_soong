@@ -20,7 +20,7 @@ import (
 	"runtime"
 	"strings"
 
-	"lineage/soong/android"
+	"vanir/soong/android"
 
 	"github.com/google/blueprint/proptools"
 )
@@ -88,8 +88,8 @@ type variableProperties struct {
 			Cppflags []string
 		}
 
-		// include Lineage variables
-		Lineage android.Product_variables
+		// include Vanir variables
+		Vanir android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -156,8 +156,8 @@ type productVariables struct {
 
 	Override_rs_driver *string `json:",omitempty"`
 
-	// include Lineage variables
-	Lineage android.ProductVariables
+	// include Vanir variables
+	Vanir android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
