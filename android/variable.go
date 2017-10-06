@@ -90,6 +90,10 @@ type variableProperties struct {
 
 		// include Vanir variables
 		Vanir android.Product_variables
+
+		// include Lineage variables
+		Lineage android.Product_variables
+
 	} `android:"arch_variant"`
 }
 
@@ -158,6 +162,10 @@ type productVariables struct {
 
 	// include Vanir variables
 	Vanir android.ProductVariables
+
+	// include Lineage variables
+	Lineage android.ProductVariables
+
 }
 
 func boolPtr(v bool) *bool {
